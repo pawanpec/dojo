@@ -11,7 +11,19 @@
  */
 
 module.exports = {
-
+  connections : {
+    yblMongoServer: {
+      adapter: 'sails-mongo'
+      , host: 'ds111754.mlab.com'
+      , port: 11754
+      , database: 'spedia'
+      , user:'admin'
+      , password:'admin123'
+      , wlNext: {
+        caseSensitive: true
+      }
+    }
+  }
   /***************************************************************************
    * Set the default database connection for models in the development       *
    * environment (see config/connections.js and config/models.js )           *
